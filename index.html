@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <a href="https://playvalorant.com/en-us/"><h1>VALORANT</h1></a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#agents">Agents</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home">
+    <div class="overlay">
+      <h2>Defy The Limits</h2>
+      <p>The tactical shooter where precision meets power.</p>
+      <button class="btn">▶ Play Now</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+     <div class="about-image">
+    <img src="assets/img1-removebg-preview.png" alt="About Image">
+    </div>
+    <div class="about-text">
+    <h2>About Valorant</h2>
+    <p>Valorant is a free-to-play 5v5 tactical shooter by Riot Games where each agent has unique abilities.
+      Combine strategy, aim, and teamwork to dominate the battlefield.</p>
+        <p>DEFY THE LIMITS Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.</p>
+      <br>    
+        <button class="btn"> learn more</button>
+     </div>
+    </section>
+
+  <!-- AGENTS -->
+   <section id="agents">
+    <h2>Agents</h2>
+    <br>
+    <div class="gallery-container">
+      <button class="arrow left" onclick="scrollLeft()">❮</button>
+      <div class="gallery">
+        <img src="assets/44f4f1d9-6a02-4512-93aa-ca5496699fa9.jpg" alt="Jett">
+        <img src="assets/565662e9-7c36-47ae-b950-b2d8593a6a7a.jpg" alt="Jett">
+        <img src="assets/5c6cefd6-52c6-4ba0-b8d2-cef0ffedfd9e.jpg" alt="Jett">
+        <!-- <img src="assets/7bd32fb9-2971-42c1-aa42-1979c48f769c.jpg" alt="Jett"> -->
+        <img src="assets/9da21b23-5872-40f6-a814-9276c60fc259.jpg" alt="Jett">
+        <img src="/assets/Japanese native, Yoru, rips holes straight through….jpg" alt="Jett">
+        <img src="assets/The genius of Germany_ Killjoy secures the….jpg" alt="Jett">
+        <img src="assets/The Moroccan information broker, Cypher is a….jpg" alt="Jett">
+        <img src="assets/The genius of Germany_ Killjoy secures the….jpg" alt="Jett">
+        <img src="assets/44f4f1d9-6a02-4512-93aa-ca5496699fa9.jpg" alt="Jett">
+        <img src="assets/565662e9-7c36-47ae-b950-b2d8593a6a7a.jpg" alt="Jett">
+      </div>
+      <button class="arrow right" onclick="scrollRight()">❯</button>
+    </div>
+  </section> 
+
+  <!-- CONTACT -->
+  <section id="contact">
+     <div class="contact-top">
+    <div class="contact-image">
+      <img src="assets/Valorant.jpg" alt="contact Image" width=100% height="100%">
+    </div>
+    <div class="contact-text">
+    <h2>Contact Us</h2>
+    <br>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    </div>
+    </div>
+    <div id="social-media">
+    <a href="https://www.instagram.com/computer_science_club/"><img src="public/icons8-instagram-logo-50.png" alt "instagram_logo"></a>
+    <a href="https://web.facebook.com/profile.php?id=61557237637525&ref=_ig_profile_ac&_rdc=1&_rdr#"><img src="public/icons8-facebook-48.png" alt="facebook_logo"></a>
+    <a href="https://form.jotform.com/252506242816050"><img src="public/Capture_d_écran_2025-10-12_195624-removebg-preview.png" alt "club_logo"></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p>&copy; 2025 Valorant Community. All rights reserved.</p>
+    <p>made by <strong>MEFLAH Yousra</strong>  - @computer_science_club workshop</p>
+    <h5> 2025</h5>
+  </footer>
+
+  <script>
+    const gallery = document.querySelector('.gallery');
+    function scrollLeft() {
+      gallery.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+    function scrollRight() {
+      gallery.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
